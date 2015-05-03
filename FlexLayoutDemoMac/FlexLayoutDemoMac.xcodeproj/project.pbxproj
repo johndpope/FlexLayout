@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DC4B9261AF07DAE000CD3A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC4B9251AF07DAE000CD3A8 /* AppDelegate.m */; };
+		9DC4B9281AF07DAE000CD3A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC4B9271AF07DAE000CD3A8 /* main.m */; };
+		9DC4B92A1AF07DAE000CD3A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC4B9291AF07DAE000CD3A8 /* Images.xcassets */; };
+		9DC4B92D1AF07DAE000CD3A8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC4B92B1AF07DAE000CD3A8 /* MainMenu.xib */; };
+		9DC4B9391AF07DAE000CD3A8 /* FlexLayoutDemoMacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC4B9381AF07DAE000CD3A8 /* FlexLayoutDemoMacTests.m */; };
+		9DC4B9AB1AF0832A000CD3A8 /* MISFlippedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC4B9A81AF0832A000CD3A8 /* MISFlippedView.m */; };
+		9DC4B9AC1AF0832A000CD3A8 /* MISViewWithBackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC4B9AA1AF0832A000CD3A8 /* MISViewWithBackgroundColor.m */; };
+		9DC4B9AE1AF08336000CD3A8 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DC4B9AD1AF08336000CD3A8 /* data.json */; };
+		9DC4B9B11AF0839F000CD3A8 /* MovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC4B9B01AF0839F000CD3A8 /* MovieModel.m */; };
+		9DC4B9B51AF084A6000CD3A8 /* FancierLayoutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC4B9B31AF084A6000CD3A8 /* FancierLayoutWindowController.m */; };
+		9DC4B9B61AF084A6000CD3A8 /* FancierLayoutWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC4B9B41AF084A6000CD3A8 /* FancierLayoutWindowController.xib */; };
+		9DC4B9BA1AF085C5000CD3A8 /* SimpleLayoutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC4B9B81AF085C5000CD3A8 /* SimpleLayoutWindowController.m */; };
+		9DC4B9BB1AF085C5000CD3A8 /* SimpleLayoutWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC4B9B91AF085C5000CD3A8 /* SimpleLayoutWindowController.xib */; };
+		9DC4B9BF1AF085CE000CD3A8 /* MovieListWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC4B9BD1AF085CE000CD3A8 /* MovieListWindowController.m */; };
+		9DC4B9C01AF085CE000CD3A8 /* MovieListWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC4B9BE1AF085CE000CD3A8 /* MovieListWindowController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9DC4B9331AF07DAE000CD3A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DC4B9171AF07DAE000CD3A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DC4B91E1AF07DAE000CD3A8;
+			remoteInfo = FlexLayoutDemoMac;
+		};
+		9DC4B9861AF07F1B000CD3A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DC4B9801AF07F1B000CD3A8 /* FlexLayout.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D8A4E041AF02DCC00124CCC;
+			remoteInfo = "FlexLayout-Mac";
+		};
+		9DC4B9881AF07F1B000CD3A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DC4B9801AF07F1B000CD3A8 /* FlexLayout.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D8A4E0F1AF02DCC00124CCC;
+			remoteInfo = FlexLayoutTests;
+		};
+		9DC4B98A1AF07F1B000CD3A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DC4B9801AF07F1B000CD3A8 /* FlexLayout.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D8A4E251AF02E2000124CCC;
+			remoteInfo = "FlexLayout-iOS";
+		};
+		9DC4B98C1AF07F31000CD3A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DC4B9801AF07F1B000CD3A8 /* FlexLayout.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D8A4E031AF02DCC00124CCC;
+			remoteInfo = "FlexLayout-Mac";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9DC4B91F1AF07DAE000CD3A8 /* FlexLayoutDemoMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexLayoutDemoMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC4B9231AF07DAE000CD3A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DC4B9241AF07DAE000CD3A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9DC4B9251AF07DAE000CD3A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9DC4B9271AF07DAE000CD3A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9DC4B9291AF07DAE000CD3A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9DC4B92C1AF07DAE000CD3A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9DC4B9321AF07DAE000CD3A8 /* FlexLayoutDemoMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlexLayoutDemoMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC4B9371AF07DAE000CD3A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DC4B9381AF07DAE000CD3A8 /* FlexLayoutDemoMacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlexLayoutDemoMacTests.m; sourceTree = "<group>"; };
+		9DC4B9801AF07F1B000CD3A8 /* FlexLayout.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FlexLayout.xcodeproj; path = ../FlexLayout.xcodeproj; sourceTree = "<group>"; };
+		9DC4B9A71AF0832A000CD3A8 /* MISFlippedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MISFlippedView.h; sourceTree = "<group>"; };
+		9DC4B9A81AF0832A000CD3A8 /* MISFlippedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MISFlippedView.m; sourceTree = "<group>"; };
+		9DC4B9A91AF0832A000CD3A8 /* MISViewWithBackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MISViewWithBackgroundColor.h; sourceTree = "<group>"; };
+		9DC4B9AA1AF0832A000CD3A8 /* MISViewWithBackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MISViewWithBackgroundColor.m; sourceTree = "<group>"; };
+		9DC4B9AD1AF08336000CD3A8 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		9DC4B9AF1AF0839F000CD3A8 /* MovieModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieModel.h; sourceTree = "<group>"; };
+		9DC4B9B01AF0839F000CD3A8 /* MovieModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieModel.m; sourceTree = "<group>"; };
+		9DC4B9B21AF084A6000CD3A8 /* FancierLayoutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FancierLayoutWindowController.h; sourceTree = "<group>"; };
+		9DC4B9B31AF084A6000CD3A8 /* FancierLayoutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FancierLayoutWindowController.m; sourceTree = "<group>"; };
+		9DC4B9B41AF084A6000CD3A8 /* FancierLayoutWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FancierLayoutWindowController.xib; sourceTree = "<group>"; };
+		9DC4B9B71AF085C5000CD3A8 /* SimpleLayoutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleLayoutWindowController.h; sourceTree = "<group>"; };
+		9DC4B9B81AF085C5000CD3A8 /* SimpleLayoutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleLayoutWindowController.m; sourceTree = "<group>"; };
+		9DC4B9B91AF085C5000CD3A8 /* SimpleLayoutWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleLayoutWindowController.xib; sourceTree = "<group>"; };
+		9DC4B9BC1AF085CE000CD3A8 /* MovieListWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListWindowController.h; sourceTree = "<group>"; };
+		9DC4B9BD1AF085CE000CD3A8 /* MovieListWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListWindowController.m; sourceTree = "<group>"; };
+		9DC4B9BE1AF085CE000CD3A8 /* MovieListWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieListWindowController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DC4B91C1AF07DAE000CD3A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DC4B92F1AF07DAE000CD3A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9DC4B9161AF07DAE000CD3A8 = {
+			isa = PBXGroup;
+			children = (
+				9DC4B9211AF07DAE000CD3A8 /* FlexLayoutDemoMac */,
+				9DC4B9351AF07DAE000CD3A8 /* FlexLayoutDemoMacTests */,
+				9DC4B9201AF07DAE000CD3A8 /* Products */,
+				9DC4B9801AF07F1B000CD3A8 /* FlexLayout.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		9DC4B9201AF07DAE000CD3A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DC4B91F1AF07DAE000CD3A8 /* FlexLayoutDemoMac.app */,
+				9DC4B9321AF07DAE000CD3A8 /* FlexLayoutDemoMacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DC4B9211AF07DAE000CD3A8 /* FlexLayoutDemoMac */ = {
+			isa = PBXGroup;
+			children = (
+				9DC4B9A41AF0831D000CD3A8 /* Helper */,
+				9DC4B9241AF07DAE000CD3A8 /* AppDelegate.h */,
+				9DC4B9251AF07DAE000CD3A8 /* AppDelegate.m */,
+				9DC4B92B1AF07DAE000CD3A8 /* MainMenu.xib */,
+				9DC4B9AF1AF0839F000CD3A8 /* MovieModel.h */,
+				9DC4B9B01AF0839F000CD3A8 /* MovieModel.m */,
+				9DC4B9B71AF085C5000CD3A8 /* SimpleLayoutWindowController.h */,
+				9DC4B9B81AF085C5000CD3A8 /* SimpleLayoutWindowController.m */,
+				9DC4B9B91AF085C5000CD3A8 /* SimpleLayoutWindowController.xib */,
+				9DC4B9B21AF084A6000CD3A8 /* FancierLayoutWindowController.h */,
+				9DC4B9B31AF084A6000CD3A8 /* FancierLayoutWindowController.m */,
+				9DC4B9B41AF084A6000CD3A8 /* FancierLayoutWindowController.xib */,
+				9DC4B9BC1AF085CE000CD3A8 /* MovieListWindowController.h */,
+				9DC4B9BD1AF085CE000CD3A8 /* MovieListWindowController.m */,
+				9DC4B9BE1AF085CE000CD3A8 /* MovieListWindowController.xib */,
+				9DC4B9291AF07DAE000CD3A8 /* Images.xcassets */,
+				9DC4B9221AF07DAE000CD3A8 /* Supporting Files */,
+			);
+			path = FlexLayoutDemoMac;
+			sourceTree = "<group>";
+		};
+		9DC4B9221AF07DAE000CD3A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DC4B9AD1AF08336000CD3A8 /* data.json */,
+				9DC4B9231AF07DAE000CD3A8 /* Info.plist */,
+				9DC4B9271AF07DAE000CD3A8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DC4B9351AF07DAE000CD3A8 /* FlexLayoutDemoMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				9DC4B9381AF07DAE000CD3A8 /* FlexLayoutDemoMacTests.m */,
+				9DC4B9361AF07DAE000CD3A8 /* Supporting Files */,
+			);
+			path = FlexLayoutDemoMacTests;
+			sourceTree = "<group>";
+		};
+		9DC4B9361AF07DAE000CD3A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DC4B9371AF07DAE000CD3A8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DC4B9811AF07F1B000CD3A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DC4B9871AF07F1B000CD3A8 /* FlexLayout.framework */,
+				9DC4B9891AF07F1B000CD3A8 /* FlexLayoutTests.xctest */,
+				9DC4B98B1AF07F1B000CD3A8 /* FlexLayout.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DC4B9A41AF0831D000CD3A8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9DC4B9A71AF0832A000CD3A8 /* MISFlippedView.h */,
+				9DC4B9A81AF0832A000CD3A8 /* MISFlippedView.m */,
+				9DC4B9A91AF0832A000CD3A8 /* MISViewWithBackgroundColor.h */,
+				9DC4B9AA1AF0832A000CD3A8 /* MISViewWithBackgroundColor.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DC4B91E1AF07DAE000CD3A8 /* FlexLayoutDemoMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DC4B93C1AF07DAE000CD3A8 /* Build configuration list for PBXNativeTarget "FlexLayoutDemoMac" */;
+			buildPhases = (
+				9DC4B91B1AF07DAE000CD3A8 /* Sources */,
+				9DC4B91C1AF07DAE000CD3A8 /* Frameworks */,
+				9DC4B91D1AF07DAE000CD3A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DC4B98D1AF07F31000CD3A8 /* PBXTargetDependency */,
+			);
+			name = FlexLayoutDemoMac;
+			productName = FlexLayoutDemoMac;
+			productReference = 9DC4B91F1AF07DAE000CD3A8 /* FlexLayoutDemoMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9DC4B9311AF07DAE000CD3A8 /* FlexLayoutDemoMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DC4B93F1AF07DAE000CD3A8 /* Build configuration list for PBXNativeTarget "FlexLayoutDemoMacTests" */;
+			buildPhases = (
+				9DC4B92E1AF07DAE000CD3A8 /* Sources */,
+				9DC4B92F1AF07DAE000CD3A8 /* Frameworks */,
+				9DC4B9301AF07DAE000CD3A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DC4B9341AF07DAE000CD3A8 /* PBXTargetDependency */,
+			);
+			name = FlexLayoutDemoMacTests;
+			productName = FlexLayoutDemoMacTests;
+			productReference = 9DC4B9321AF07DAE000CD3A8 /* FlexLayoutDemoMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DC4B9171AF07DAE000CD3A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = mischneider;
+				TargetAttributes = {
+					9DC4B91E1AF07DAE000CD3A8 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					9DC4B9311AF07DAE000CD3A8 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 9DC4B91E1AF07DAE000CD3A8;
+					};
+				};
+			};
+			buildConfigurationList = 9DC4B91A1AF07DAE000CD3A8 /* Build configuration list for PBXProject "FlexLayoutDemoMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DC4B9161AF07DAE000CD3A8;
+			productRefGroup = 9DC4B9201AF07DAE000CD3A8 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9DC4B9811AF07F1B000CD3A8 /* Products */;
+					ProjectRef = 9DC4B9801AF07F1B000CD3A8 /* FlexLayout.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				9DC4B91E1AF07DAE000CD3A8 /* FlexLayoutDemoMac */,
+				9DC4B9311AF07DAE000CD3A8 /* FlexLayoutDemoMacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9DC4B9871AF07F1B000CD3A8 /* FlexLayout.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FlexLayout.framework;
+			remoteRef = 9DC4B9861AF07F1B000CD3A8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9DC4B9891AF07F1B000CD3A8 /* FlexLayoutTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FlexLayoutTests.xctest;
+			remoteRef = 9DC4B9881AF07F1B000CD3A8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9DC4B98B1AF07F1B000CD3A8 /* FlexLayout.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FlexLayout.framework;
+			remoteRef = 9DC4B98A1AF07F1B000CD3A8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DC4B91D1AF07DAE000CD3A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC4B9BB1AF085C5000CD3A8 /* SimpleLayoutWindowController.xib in Resources */,
+				9DC4B9B61AF084A6000CD3A8 /* FancierLayoutWindowController.xib in Resources */,
+				9DC4B92A1AF07DAE000CD3A8 /* Images.xcassets in Resources */,
+				9DC4B9AE1AF08336000CD3A8 /* data.json in Resources */,
+				9DC4B9C01AF085CE000CD3A8 /* MovieListWindowController.xib in Resources */,
+				9DC4B92D1AF07DAE000CD3A8 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DC4B9301AF07DAE000CD3A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DC4B91B1AF07DAE000CD3A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC4B9281AF07DAE000CD3A8 /* main.m in Sources */,
+				9DC4B9AB1AF0832A000CD3A8 /* MISFlippedView.m in Sources */,
+				9DC4B9AC1AF0832A000CD3A8 /* MISViewWithBackgroundColor.m in Sources */,
+				9DC4B9B11AF0839F000CD3A8 /* MovieModel.m in Sources */,
+				9DC4B9BA1AF085C5000CD3A8 /* SimpleLayoutWindowController.m in Sources */,
+				9DC4B9B51AF084A6000CD3A8 /* FancierLayoutWindowController.m in Sources */,
+				9DC4B9BF1AF085CE000CD3A8 /* MovieListWindowController.m in Sources */,
+				9DC4B9261AF07DAE000CD3A8 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DC4B92E1AF07DAE000CD3A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC4B9391AF07DAE000CD3A8 /* FlexLayoutDemoMacTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9DC4B9341AF07DAE000CD3A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DC4B91E1AF07DAE000CD3A8 /* FlexLayoutDemoMac */;
+			targetProxy = 9DC4B9331AF07DAE000CD3A8 /* PBXContainerItemProxy */;
+		};
+		9DC4B98D1AF07F31000CD3A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FlexLayout-Mac";
+			targetProxy = 9DC4B98C1AF07F31000CD3A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9DC4B92B1AF07DAE000CD3A8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DC4B92C1AF07DAE000CD3A8 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DC4B93A1AF07DAE000CD3A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9DC4B93B1AF07DAE000CD3A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9DC4B93D1AF07DAE000CD3A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FlexLayoutDemoMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9DC4B93E1AF07DAE000CD3A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FlexLayoutDemoMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9DC4B9401AF07DAE000CD3A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FlexLayoutDemoMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlexLayoutDemoMac.app/Contents/MacOS/FlexLayoutDemoMac";
+			};
+			name = Debug;
+		};
+		9DC4B9411AF07DAE000CD3A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FlexLayoutDemoMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlexLayoutDemoMac.app/Contents/MacOS/FlexLayoutDemoMac";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DC4B91A1AF07DAE000CD3A8 /* Build configuration list for PBXProject "FlexLayoutDemoMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DC4B93A1AF07DAE000CD3A8 /* Debug */,
+				9DC4B93B1AF07DAE000CD3A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DC4B93C1AF07DAE000CD3A8 /* Build configuration list for PBXNativeTarget "FlexLayoutDemoMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DC4B93D1AF07DAE000CD3A8 /* Debug */,
+				9DC4B93E1AF07DAE000CD3A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DC4B93F1AF07DAE000CD3A8 /* Build configuration list for PBXNativeTarget "FlexLayoutDemoMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DC4B9401AF07DAE000CD3A8 /* Debug */,
+				9DC4B9411AF07DAE000CD3A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DC4B9171AF07DAE000CD3A8 /* Project object */;
+}
