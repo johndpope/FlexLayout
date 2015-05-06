@@ -9,6 +9,8 @@
 #import <FlexLayout/FLTNode.h>
 #import <FlexLayout/Layout.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface FLTNode (Private)
 
 @property (assign, nonatomic, readonly) css_node_t *node;
@@ -18,3 +20,5 @@
 - (void)layoutWithMaxWidth:(CGFloat)maxWidth;
 
 @end
+
+NS_ASSUME_NONNULL_END

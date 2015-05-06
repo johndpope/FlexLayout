@@ -20,6 +20,8 @@ typedef NSEdgeInsets FLTEdgeInsets;
 
 @class FLTLayout;
 
+NS_ASSUME_NONNULL_BEGIN
+
 /// Wrapper around UIEdgeInsetsMake and NSEdgeInsetsMake
 NS_INLINE FLTEdgeInsets FLTEdgeInsetsMake(CGFloat top, CGFloat left, CGFloat bottom, CGFloat right) {
 #if (TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE)
@@ -68,9 +70,9 @@ typedef enum : NSUInteger {
 
 @interface FLTNodeBuilder : NSObject
 
-@property (strong, nonatomic) FLTNodeView *view;
+@property (strong, nonatomic, nullable) FLTNodeView *view;
 @property (assign, nonatomic) CGSize size;
-@property (copy, nonatomic) NSArray *children;
+@property (copy, nonatomic, nullable) NSArray *children;
 @property (assign, nonatomic) FLTNodeDirection direction;
 @property (assign, nonatomic) FLTEdgeInsets margin;
 @property (assign, nonatomic) FLTEdgeInsets padding;
@@ -79,15 +81,15 @@ typedef enum : NSUInteger {
 @property (assign, nonatomic) FLTNodeSelfAlignment selfAlignment;
 @property (assign, nonatomic) FLTNodeChildAlignment childAlignment;
 @property (assign, nonatomic) CGFloat flex;
-@property (copy, nonatomic) CGSize (^measure)(CGFloat width);
+@property (copy, nonatomic, nullable) CGSize (^measure)(CGFloat width);
 
 @end
 
 @interface FLTNode : NSObject
 
-@property (strong, nonatomic, readonly) FLTNodeView *view;
+@property (strong, nonatomic, readonly, nullable) FLTNodeView *view;
 @property (assign, nonatomic, readonly) CGSize size;
-@property (copy, nonatomic, readonly) NSArray *children;
+@property (copy, nonatomic, readonly, nullable) NSArray *children;
 @property (assign, nonatomic, readonly) FLTNodeDirection direction;
 @property (assign, nonatomic, readonly) FLTEdgeInsets margin;
 @property (assign, nonatomic, readonly) FLTEdgeInsets padding;
@@ -96,9 +98,10 @@ typedef enum : NSUInteger {
 @property (assign, nonatomic, readonly) FLTNodeSelfAlignment selfAlignment;
 @property (assign, nonatomic, readonly) FLTNodeChildAlignment childAlignment;
 @property (assign, nonatomic, readonly) CGFloat flex;
-@property (copy, nonatomic, readonly) CGSize (^measure)(CGFloat width);
+@property (copy, nonatomic, readonly, nullable) CGSize (^measure)(CGFloat width);
 
 + (instancetype)nodeWithBlock:(void (^)(FLTNodeBuilder *nodeBuilder))block;
+- (instancetype)init NS_UNAVAILABLE;
 
 - (FLTLayout *)buildLayout;
 - (FLTLayout *)buildLayoutWithMaxWidth:(CGFloat)maxWidth;
@@ -107,3 +110,5 @@ typedef enum : NSUInteger {
 
 /// Helper function to create FTLNode objects
 FLTNode *FLTNodeMake(void(^block)(FLTNodeBuilder *nodeBuilder));
+
+NS_ASSUME_NONNULL_END

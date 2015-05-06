@@ -21,7 +21,7 @@
 
 - (instancetype)initWithNode:(FLTNode *)node children:(NSArray *)children
 {
-    self = [self init];
+    self = [super init];
     if (self == nil) { return self; }
     
     _node = node;
