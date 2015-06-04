@@ -7,8 +7,16 @@
 //
 
 #import <AppKit/AppKit.h>
+#import "SimpleLayoutWindowController.h"
 
 IB_DESIGNABLE
-@interface MISViewWithBackgroundColor : NSView
+@interface MISViewWithBackgroundColor : NSView{
+    NSTrackingArea *trackingArea;
+    id navDelegate;
+}
+@property (nonatomic)    BOOL highlighted;
+@property (nonatomic, strong) IBInspectable   NSColor *onBackgroundColor;
 @property (strong, nonatomic) IBInspectable NSColor *backgroundColor;
+@property (atomic, readwrite) int myTag;
+- (id)initWithFrame:(NSRect)frame  navDelegate:(id)delegate;
 @end

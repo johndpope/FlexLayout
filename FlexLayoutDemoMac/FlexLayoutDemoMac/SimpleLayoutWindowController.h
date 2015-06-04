@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface SimpleLayoutWindowController : NSWindowController
-
+@interface SimpleLayoutWindowController : NSWindowController{
+    
+}
+-(void)highlightSubview:(id)sender;
 @end
