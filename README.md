@@ -99,6 +99,9 @@ Alternatively, you can than take that layout and apply the layout to a view hier
 
 See [FlexLayoutDemoiOS](FlexLayoutDemoiOS/FlexLayoutDemoiOS) for an iOS demo and [FlexLayoutDemoMac](FlexLayoutDemoMac/FlexLayoutDemoMac) for a Mac demo.
 
+[![Alt text for your video](http://img.youtube.com/vi/QjAXLGgmDiE/0.jpg)](https://youtu.be/QjAXLGgmDiE)
+
+
 ## TODO:
 
 - Better documentation
