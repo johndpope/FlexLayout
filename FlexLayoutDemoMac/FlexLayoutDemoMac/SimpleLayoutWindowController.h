@@ -7,9 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
-@interface SimpleLayoutWindowController : NSWindowController{
-    
+#import <FlexLayout/FlexLayout.h>
+@interface SimpleLayoutWindowController : NSWindowController {
+    FLTLayout *layout;
 }
 -(void)highlightSubview:(id)sender;
 @end

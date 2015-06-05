@@ -37,13 +37,30 @@
     
     MISViewWithBackgroundColor *pinkView1 = [[MISViewWithBackgroundColor alloc] initWithFrame:NSMakeRect(63, 60, 100, 100) navDelegate:self ];
     pinkView1.backgroundColor = [NSColor colorWithDeviceRed:0.921 green:0.658 blue:0.882 alpha:1];
-     pinkView1.onBackgroundColor = [NSColor colorWithDeviceRed:0.921 green:0.658 blue:0.3 alpha:1];
+    pinkView1.onBackgroundColor = [NSColor colorWithDeviceRed:0.921 green:0.658 blue:0.3 alpha:1];
+    
+    MISViewWithBackgroundColor *pinkView2 = [[MISViewWithBackgroundColor alloc] initWithFrame:NSMakeRect(63, 60, 100, 100) navDelegate:self ];
+    pinkView2.backgroundColor = [NSColor colorWithDeviceRed:0.921 green:0.658 blue:0.882 alpha:1];
+    pinkView2.onBackgroundColor = [NSColor colorWithDeviceRed:0.921 green:0.658 blue:0.3 alpha:1];
+    
+    
+    MISViewWithBackgroundColor *pinkView3 = [[MISViewWithBackgroundColor alloc] initWithFrame:NSMakeRect(63, 60, 100, 100) navDelegate:self ];
+    pinkView3.backgroundColor = [NSColor colorWithDeviceRed:0.921 green:0.658 blue:0.882 alpha:1];
+    pinkView3.onBackgroundColor = [NSColor colorWithDeviceRed:0.921 green:0.658 blue:0.3 alpha:1];
+    
+    MISViewWithBackgroundColor *pinkView4 = [[MISViewWithBackgroundColor alloc] initWithFrame:NSMakeRect(63, 60, 100, 100) navDelegate:self ];
+    pinkView4.backgroundColor = [NSColor colorWithDeviceRed:0.921 green:0.658 blue:0.882 alpha:1];
+    pinkView4.onBackgroundColor = [NSColor colorWithDeviceRed:0.921 green:0.658 blue:0.3 alpha:1];
+    
     
     [contentView addSubview:orangeView];
     [contentView addSubview:blueView];
     [contentView addSubview:pinkView];
     [contentView addSubview:pinkView1];
-
+    [contentView addSubview:pinkView2];
+    [contentView addSubview:pinkView3];
+    [contentView addSubview:pinkView4];
+    
     [self layoutSubviews];
 }
 
@@ -57,97 +74,115 @@
 {
     NSView *contentView = [self.window contentView];
     FLTNode *parent = [self  parentLayout];
-    FLTLayout *layout = [parent buildLayout];
+    layout = [parent buildLayout];
+    //  layout.children = [self childrenLayouts];
     NSLog(@"%@", layout);
     [layout applyToView:contentView];
     [contentView setNeedsDisplay:YES];
 }
 
--(void)highlightSubview:(id)sender{
-    if (sender ==nil){
+-(void)highlightSubview:(id)sender {
+    if (sender ==nil) {
         [self layoutSubviews];
     }
-   NSView *contentView = self.window.contentView;
-    [[contentView subviews] enumerateObjectsUsingBlock:^(NSView *v, NSUInteger idx, BOOL *stop) {
+    NSView *contentView = self.window.contentView;
+    [[contentView subviews] enumerateObjectsUsingBlock:^(NSView *v, NSUInteger idx0, BOOL *stop) {
         if (v == sender) {
-           [CATransaction setAnimationDuration:10];
-           [CATransaction begin];
-           [CATransaction setCompletionBlock:^{
-                    NSLog(@"setCompletionBlock");
-          }];
+            
             NSView *contentView = [self.window contentView];
-            FLTNode *parent = [self selectedLayout:idx];
+            FLTNode *parent = [self selectedLayout:idx0];
+            
+            
             FLTLayout *layout = [parent buildLayout];
             [layout applyToView:contentView];
             [contentView setNeedsDisplay:YES];
-            [CATransaction commit];
+            
+            
         }
     }];
 }
 
 
--(FLTNode*)parentLayout{
+-(FLTNode*)parentLayout {
     NSView *contentView = [self.window contentView];
     FLTNode *parent = FLTNodeMake(^(FLTNodeBuilder *n) {
         n.size = contentView.frame.size;
-        n.direction = FLTNodeDirectionRow;
+        n.direction = FLTNodeDirectionColumn;
         n.childAlignment = FLTNodeChildAlignmentCenter;
         n.children =[self childrenLayouts];
     });
-
-    return parent;
-
-}
--(NSArray*)childrenLayouts{
     
-    NSView *contentView = [self.window contentView];
-    float height=contentView.visibleRect.size.height;
+    
+    return parent;
+    
+}
+-(NSArray*)childrenLayouts {
+    
+    float height=44;
+    float width=200;
     return @[
-      FLTNodeMake(^(FLTNodeBuilder *n) {
-          n.flex = 25;
-          n.margin = FLTEdgeInsetsMake(0.0, 10.0, 0.0, 10.0);
-          n.size = CGSizeMake(0, height);
-      }),
-      FLTNodeMake(^(FLTNodeBuilder *n) {
-          n.flex = 25;
-          n.margin = FLTEdgeInsetsMake(0.0, 0.0, 0.0, 10.0);
-          n.size = CGSizeMake(0, height);
-      }),
-      FLTNodeMake(^(FLTNodeBuilder *n) {
-          n.flex = 25;
-          n.margin = FLTEdgeInsetsMake(0.0, 0.0, 0.0, 10.0);
-          n.size = CGSizeMake(0, height);
-      }),
-      FLTNodeMake(^(FLTNodeBuilder *n) {
-          n.flex = 25;
-          n.margin = FLTEdgeInsetsMake(0.0, 0.0, 0.0, 10.0);
-          n.size = CGSizeMake(0, height);
-      })
-      ];
+             FLTNodeMake(^(FLTNodeBuilder *n) {
+                 n.flex = 5;
+                 n.margin = FLTEdgeInsetsMake(0.0, 0.0, 10.0, 10.0);
+                 n.size = CGSizeMake(width, height);
+             }),
+             FLTNodeMake(^(FLTNodeBuilder *n) {
+                 n.flex = 15;
+                 n.margin = FLTEdgeInsetsMake(0.0, 0.0, 10.0, 10.0);
+                 n.size = CGSizeMake(width, height);
+             }),
+             FLTNodeMake(^(FLTNodeBuilder *n) {
+                 n.flex = 15;
+                 n.margin = FLTEdgeInsetsMake(0.0, 0.0, 10.0, 10.0);
+                 n.size = CGSizeMake(width, height);
+                 n.wrap = YES;
+             }),
+             FLTNodeMake(^(FLTNodeBuilder *n) {
+                 n.flex = 35;
+                 n.margin = FLTEdgeInsetsMake(0.0, 0.0, 10.0, 10.0);
+                 n.size = CGSizeMake(width, height);
+             }),
+             FLTNodeMake(^(FLTNodeBuilder *n) {
+                 n.flex = 25;
+                 n.margin = FLTEdgeInsetsMake(0.0, 0.0, 10.0, 10.0);
+                 n.size = CGSizeMake(width, height);
+             }),
+             FLTNodeMake(^(FLTNodeBuilder *n) {
+                 n.flex = 15;
+                 n.margin = FLTEdgeInsetsMake(0.0, 0.0, 10.0, 10.0);
+                 n.size = CGSizeMake(width, height);
+             }),
+             FLTNodeMake(^(FLTNodeBuilder *n) {
+                 n.flex = 5;
+                 n.margin = FLTEdgeInsetsMake(0.0, 0.0, 10.0, 10.0);
+                 n.size = CGSizeMake(width, height);
+             })
+             ];
 }
 
--(FLTNode*)selectedLayout:(NSUInteger)selectedIdx{
+-(FLTNode*)selectedLayout:(NSUInteger)selectedIdx {
     NSLog(@"idx:%d",(int)selectedIdx);
     NSView *contentView = [self.window contentView];
-        float height=contentView.visibleRect.size.height;
+    float height=200;
     FLTNode *parent = FLTNodeMake(^(FLTNodeBuilder *n) {
         n.size = contentView.frame.size;
-        n.direction = FLTNodeDirectionRow;
+        n.direction = FLTNodeDirectionColumn;
         n.childAlignment = FLTNodeChildAlignmentCenter;
         
         NSMutableArray *arr = [NSMutableArray arrayWithArray:[self childrenLayouts]];
         [[arr copy] enumerateObjectsUsingBlock:^(FLTNode *n, NSUInteger idx, BOOL *stop) {
             if (selectedIdx == idx) {
-              FLTNode *node =  FLTNodeMake(^(FLTNodeBuilder *n1) {
-                    n1.flex = 35;
-                    n1.margin = FLTEdgeInsetsMake(0.0, 0.0, 0.0, 10.0);
-                    n1.size = CGSizeMake(0, height);
-               });
+                FLTNode *node =  FLTNodeMake(^(FLTNodeBuilder *n1) {
+                    n1.flex = 85;
+                    n1.margin = FLTEdgeInsetsMake(0.0, 0.0, 10.0, 10.0);
+                    n1.size = CGSizeMake(height, height);
+                });
                 [arr replaceObjectAtIndex:idx withObject:node];
+                
             }
         }];
         [arr enumerateObjectsUsingBlock:^(FLTNode *n, NSUInteger idx, BOOL *stop) {
-             NSLog(@"flex:%f",n.flex);
+            NSLog(@"flex:%f",n.flex);
         }];
         n.children = arr;
     });
