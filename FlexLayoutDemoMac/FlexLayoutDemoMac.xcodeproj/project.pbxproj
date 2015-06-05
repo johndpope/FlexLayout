@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DA16E311B21298100D58493 /* NSColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA16E301B21298100D58493 /* NSColor+Extension.m */; };
 		9DC4B9261AF07DAE000CD3A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC4B9251AF07DAE000CD3A8 /* AppDelegate.m */; };
 		9DC4B9281AF07DAE000CD3A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC4B9271AF07DAE000CD3A8 /* main.m */; };
 		9DC4B92A1AF07DAE000CD3A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC4B9291AF07DAE000CD3A8 /* Images.xcassets */; };
@@ -63,6 +64,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5DA16E2F1B21298100D58493 /* NSColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+Extension.h"; sourceTree = "<group>"; };
+		5DA16E301B21298100D58493 /* NSColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+Extension.m"; sourceTree = "<group>"; };
 		9DC4B91F1AF07DAE000CD3A8 /* FlexLayoutDemoMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexLayoutDemoMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC4B9231AF07DAE000CD3A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DC4B9241AF07DAE000CD3A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +113,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DA16E2E1B21298100D58493 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				5DA16E2F1B21298100D58493 /* NSColor+Extension.h */,
+				5DA16E301B21298100D58493 /* NSColor+Extension.m */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
 		9DC4B9161AF07DAE000CD3A8 = {
 			isa = PBXGroup;
 			children = (
@@ -132,15 +144,16 @@
 		9DC4B9211AF07DAE000CD3A8 /* FlexLayoutDemoMac */ = {
 			isa = PBXGroup;
 			children = (
+				5DA16E2E1B21298100D58493 /* External */,
 				9DC4B9A41AF0831D000CD3A8 /* Helper */,
 				9DC4B9241AF07DAE000CD3A8 /* AppDelegate.h */,
 				9DC4B9251AF07DAE000CD3A8 /* AppDelegate.m */,
 				9DC4B92B1AF07DAE000CD3A8 /* MainMenu.xib */,
 				9DC4B9AF1AF0839F000CD3A8 /* MovieModel.h */,
+				9DC4B9B91AF085C5000CD3A8 /* SimpleLayoutWindowController.xib */,
 				9DC4B9B01AF0839F000CD3A8 /* MovieModel.m */,
 				9DC4B9B71AF085C5000CD3A8 /* SimpleLayoutWindowController.h */,
 				9DC4B9B81AF085C5000CD3A8 /* SimpleLayoutWindowController.m */,
-				9DC4B9B91AF085C5000CD3A8 /* SimpleLayoutWindowController.xib */,
 				9DC4B9B21AF084A6000CD3A8 /* FancierLayoutWindowController.h */,
 				9DC4B9B31AF084A6000CD3A8 /* FancierLayoutWindowController.m */,
 				9DC4B9B41AF084A6000CD3A8 /* FancierLayoutWindowController.xib */,
@@ -184,8 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				9DC4B9871AF07F1B000CD3A8 /* FlexLayout.framework */,
-				9DC4B9891AF07F1B000CD3A8 /* FlexLayoutTests.xctest */,
 				9DC4B98B1AF07F1B000CD3A8 /* FlexLayout.framework */,
+				9DC4B9891AF07F1B000CD3A8 /* FlexLayoutTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -342,6 +355,7 @@
 				9DC4B9BA1AF085C5000CD3A8 /* SimpleLayoutWindowController.m in Sources */,
 				9DC4B9B51AF084A6000CD3A8 /* FancierLayoutWindowController.m in Sources */,
 				9DC4B9BF1AF085CE000CD3A8 /* MovieListWindowController.m in Sources */,
+				5DA16E311B21298100D58493 /* NSColor+Extension.m in Sources */,
 				9DC4B9261AF07DAE000CD3A8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

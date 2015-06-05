@@ -26,7 +26,7 @@
     
     _node = node;
     _children = [children copy];
-
+    
     return self;
 }
 
@@ -56,7 +56,7 @@
 {
     // Update node view frame
     self.node.view.frame = CGRectIntegral(self.frame);
-
+    
     // Layout all subviews
     for (FLTLayout *layout in self.children) {
         [layout layoutViews];
@@ -66,7 +66,11 @@
 - (void)applyToView:(FLTNodeView *)view
 {
     // Layout top view
-    view.frame = CGRectIntegral(self.frame);
+    [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context){
+        [[view animator] setFrame:CGRectIntegral(self.frame)];
+    } completionHandler:^{
+        
+    }];
     
     // Layout all subviews
     NSArray *subviews  = view.subviews;
@@ -107,7 +111,7 @@
         }
         return childrenDescripton;
     }
-
+    
     return description;
 }
 

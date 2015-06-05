@@ -7,6 +7,8 @@
 //
 
 #import "MISViewWithBackgroundColor.h"
+#import "NSColor+Extension.h"
+
 
 @implementation MISViewWithBackgroundColor
 
@@ -71,5 +73,6 @@
     NSRectFill(dirtyRect);
     [super drawRect:dirtyRect];
 }
+
 
 @end

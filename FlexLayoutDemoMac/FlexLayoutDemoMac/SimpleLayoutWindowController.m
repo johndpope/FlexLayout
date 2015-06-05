@@ -10,6 +10,7 @@
 #import "MISViewWithBackgroundColor.h"
 #import <FlexLayout/FlexLayout.h>
 #import <QuartzCore/QuartzCore.h>
+#import "NSColor+Extension.h"
 
 @interface SimpleLayoutWindowController ()
 
@@ -24,33 +25,33 @@
     NSView *contentView = self.window.contentView;
     
     MISViewWithBackgroundColor *orangeView = [[MISViewWithBackgroundColor alloc] initWithFrame:NSMakeRect(0, 185, 100, 100) navDelegate:self];
-    orangeView.backgroundColor = [NSColor colorWithDeviceRed:0.972 green:0.587 blue:0.153 alpha:1];
-    orangeView.onBackgroundColor = [NSColor colorWithDeviceRed:0.972 green:0.587 blue:0.13 alpha:1];
+    orangeView.backgroundColor = [NSColor  colorFromHexString:@"c83c31"];
+    orangeView.onBackgroundColor = [NSColor colorFromHexString:@"c83c31"];
     
     MISViewWithBackgroundColor *blueView = [[MISViewWithBackgroundColor alloc] initWithFrame:NSMakeRect(262, 115, 100, 100) navDelegate:self];
-    blueView.backgroundColor = [NSColor colorWithDeviceRed:0.241 green:0.587 blue:0.561 alpha:1];
-    blueView.onBackgroundColor = [NSColor colorWithDeviceRed:0.241 green:0.587 blue:0.561 alpha:1];
+    blueView.backgroundColor = [NSColor colorFromHexString:@"e74937"];
+    blueView.onBackgroundColor = [NSColor colorFromHexString:@"e74937"];
     
     MISViewWithBackgroundColor *pinkView = [[MISViewWithBackgroundColor alloc] initWithFrame:NSMakeRect(63, 60, 100, 100) navDelegate:self];
-    pinkView.backgroundColor = [NSColor colorWithDeviceRed:0.921 green:0.658 blue:0.882 alpha:1];
-    pinkView.onBackgroundColor = [NSColor colorWithDeviceRed:0.921 green:0.658 blue:0.5 alpha:1];
+    pinkView.backgroundColor = [NSColor colorFromHexString:@"e96c37"];
+    pinkView.onBackgroundColor = [NSColor colorFromHexString:@"e96c37"];
     
     MISViewWithBackgroundColor *pinkView1 = [[MISViewWithBackgroundColor alloc] initWithFrame:NSMakeRect(63, 60, 100, 100) navDelegate:self ];
-    pinkView1.backgroundColor = [NSColor colorWithDeviceRed:0.921 green:0.658 blue:0.882 alpha:1];
-    pinkView1.onBackgroundColor = [NSColor colorWithDeviceRed:0.921 green:0.658 blue:0.3 alpha:1];
+    pinkView1.backgroundColor = [NSColor colorFromHexString:@"d85703"];
+    pinkView1.onBackgroundColor = [NSColor colorFromHexString:@"d85703"];
     
     MISViewWithBackgroundColor *pinkView2 = [[MISViewWithBackgroundColor alloc] initWithFrame:NSMakeRect(63, 60, 100, 100) navDelegate:self ];
-    pinkView2.backgroundColor = [NSColor colorWithDeviceRed:0.921 green:0.658 blue:0.882 alpha:1];
-    pinkView2.onBackgroundColor = [NSColor colorWithDeviceRed:0.921 green:0.658 blue:0.3 alpha:1];
+    pinkView2.backgroundColor = [NSColor colorFromHexString:@"e6bb0c"];
+    pinkView2.onBackgroundColor = [NSColor colorFromHexString:@"e6bb0c"];
     
     
     MISViewWithBackgroundColor *pinkView3 = [[MISViewWithBackgroundColor alloc] initWithFrame:NSMakeRect(63, 60, 100, 100) navDelegate:self ];
-    pinkView3.backgroundColor = [NSColor colorWithDeviceRed:0.921 green:0.658 blue:0.882 alpha:1];
-    pinkView3.onBackgroundColor = [NSColor colorWithDeviceRed:0.921 green:0.658 blue:0.3 alpha:1];
+    pinkView3.backgroundColor = [NSColor colorFromHexString:@"18a58c"];
+    pinkView3.onBackgroundColor = [NSColor colorFromHexString:@"18a58c"];
     
     MISViewWithBackgroundColor *pinkView4 = [[MISViewWithBackgroundColor alloc] initWithFrame:NSMakeRect(63, 60, 100, 100) navDelegate:self ];
-    pinkView4.backgroundColor = [NSColor colorWithDeviceRed:0.921 green:0.658 blue:0.882 alpha:1];
-    pinkView4.onBackgroundColor = [NSColor colorWithDeviceRed:0.921 green:0.658 blue:0.3 alpha:1];
+    pinkView4.backgroundColor = [NSColor colorFromHexString:@"2cc775"];
+    pinkView4.onBackgroundColor = [NSColor colorFromHexString:@"2cc775"];
     
     
     [contentView addSubview:orangeView];
@@ -93,8 +94,8 @@
             FLTNode *parent = [self selectedLayout:idx0];
             
             
-            FLTLayout *layout = [parent buildLayout];
-            [layout applyToView:contentView];
+            FLTLayout *l = [parent buildLayout];
+            [l applyToView:contentView];
             [contentView setNeedsDisplay:YES];
             
             
